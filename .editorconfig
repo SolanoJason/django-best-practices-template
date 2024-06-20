@@ -1,0 +1,30 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+trim_trailing_whitespace = true
+charset = utf-8
+indent_size = 4
+
+[*.{ini,py,py.tpl,rst}]
+indent_style = space
+indent_size = 4
+
+[*.py]
+max_line_length = 130
+
+[*.html]
+indent_size = 2
+
+[*.{sh,bat.tpl,Makefile.tpl}]
+indent_style = tab
+indent_size = 4
+
+[*.yml]
+indent_style = space
+indent_size = 2
+
+[*.json]
+indent_size = 2

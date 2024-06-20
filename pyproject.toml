@@ -1,0 +1,17 @@
+[tool.poetry]
+package-mode = false
+description = ""
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "{{ django_version }}"
+
+
+[tool.poetry.group.dev.dependencies]
+django-extensions = "^3.2.3"
+django-debug-toolbar = "^4.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
