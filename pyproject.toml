@@ -11,6 +11,7 @@ django = "{{ django_version }}"
 [tool.poetry.group.dev.dependencies]
 django-extensions = "^3.2.3"
 django-debug-toolbar = "^4.4.2"
+ipython = "^8.25.0"
 
 [build-system]
 requires = ["poetry-core"]
