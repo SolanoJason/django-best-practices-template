@@ -6,12 +6,15 @@ readme = "README.rst"
 [tool.poetry.dependencies]
 python = "^3.10"
 django = "{{ django_version }}"
-
+environs = {extras = ["django"], version = "^11.0.0"}
 
 [tool.poetry.group.dev.dependencies]
 django-extensions = "^3.2.3"
 django-debug-toolbar = "^4.4.2"
 ipython = "^8.25.0"
+flake8 = "^7.1.0"
+flake8-bugbear = "^24.4.26"
+black = {version = "^24.4.2", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry-core"]

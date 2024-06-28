@@ -10,7 +10,7 @@ Features
 - Organized project structure
 - Settings module split into base, development, and production settings
 - Custom user model in the accounts app
-- Integration with `django-extensions <https://django-extensions.readthedocs.io/en/latest//>`_ and `django-debug-toolbar <https://django-debug-toolbar.readthedocs.io/en/latest//>`_
+- Integration with `django-extensions <https://django-extensions.readthedocs.io/en/latest//>`_, `flake8 <https://flake8.pycqa.org/en/latest//>`_, `black <https://black.readthedocs.io/en/stable//>`_
 - Includes basic setup for static files and templates
 
 Requirements
@@ -26,7 +26,7 @@ Usage
 
 .. code-block:: console
 
-    $ django-admin startproject --template=https://github.com/SolanoJason/django-best-practices-template/archive/main.zip --extension=py,toml projectname
+    $ django-admin startproject --template=https://github.com/SolanoJason/django-best-practices-template/archive/main.zip --extension=py,toml,env projectname
 
 .. code-block:: console
 

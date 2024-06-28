@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/
 
 import sys
 from pathlib import Path
+from environs import Env
+
+env = Env()
+env.read_env(override=True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -22,7 +26,7 @@ sys.path.insert(0, str(BASE_DIR / 'apps'))
 # See https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '{{ secret_key }}'
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
