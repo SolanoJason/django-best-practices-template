@@ -45,16 +45,18 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-LOCAL_APPS = [
-    'accounts',
-]
-
 THIRD_PARTY_APPS = [
+    'rest_framework',
     'django_extensions',
     "debug_toolbar",
 ]
 
-INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
+LOCAL_APPS = [
+    'accounts',
+]
+
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
