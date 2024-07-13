@@ -158,3 +158,7 @@ AUTH_USER_MODEL = 'accounts.User'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 MEDIA_URL = 'media/'
+
+SHELL_PLUS_IMPORTS = [
+    'from rest_framework.settings import api_settings',
+]
