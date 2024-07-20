@@ -1,4 +1,5 @@
 [tool.poetry]
+name = "{{ project_name }}"
 package-mode = false
 description = ""
 readme = "README.rst"
