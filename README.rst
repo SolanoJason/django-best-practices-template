@@ -65,6 +65,27 @@ How to start an Application inside apps/ directory
 
     django-admin startapp <app_name> apps/<app_name>
 
+How to reference Applications
+============
+
+In order to import applications inside apps/ directory we can safely assume the Application is in root directory, this is thanks to this line of code:
+
+.. code-block:: python
+    # settings/base.py
+    sys.path.insert(0, str(BASE_DIR / 'apps'))
+
+1. For example in INSTALLED_APPS:
+
+.. code-block:: python
+    # settings/base.py
+    LOCAL_APPS = ['<app_name>']
+
+1. Importing the application:
+
+.. code-block:: python
+    # settings/base.py
+    from <app_name> import models
+
 Contributing
 ============
 
