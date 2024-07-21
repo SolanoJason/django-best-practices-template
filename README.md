@@ -62,21 +62,21 @@ A Django project template that follows best practices. This template is designed
 
 ## How to reference Applications
 
-In order to import applications inside the apps/ directory, we must assume the application is in the root directory. This is achieved by adding the following line of code:
+1. In order to import applications inside the apps/ directory, we must assume the application is in the root directory. This is achieved thanks to the following line of code in settings:
 
     ```python
     # settings/base.py
     sys.path.insert(0, str(BASE_DIR / 'apps'))
     ```
 
-1. For example in `INSTALLED_APPS`:
+2. For example in `INSTALLED_APPS`:
 
     ```python
     # settings/base.py
     LOCAL_APPS = ['accounts']
     ```
 
-1. For example, to import modules:
+3. For example, to import modules:
 
     ```python
     # settings/base.py
