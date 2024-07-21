@@ -2,7 +2,7 @@
 name = "{{ project_name }}"
 package-mode = false
 description = ""
-readme = "README.rst"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
