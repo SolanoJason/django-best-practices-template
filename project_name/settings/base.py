@@ -22,12 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 sys.path.insert(0, str(BASE_DIR / 'apps'))
 
-# Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("SECRET_KEY")
-
 
 ALLOWED_HOSTS = []
 
@@ -86,17 +81,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
