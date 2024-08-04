@@ -5,7 +5,7 @@ description = ""
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.10.14"
+python = "3.10.11"
 django = "{{ django_version }}"
 environs = {extras = ["django"], version = "^11.0.0"}
 djangorestframework = "^3.15.2"
