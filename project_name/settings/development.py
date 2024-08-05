@@ -8,7 +8,7 @@ INTERNAL_IPS = [
 
 ALLOWED_HOSTS = [".localhost", "127.0.0.1", "[::1]"]  # Default when debug is True
 
-SECRET_KEY = {{ secret_key }}
+SECRET_KEY = "{{ secret_key }}"
 
 DATABASES = {
     'default': {
